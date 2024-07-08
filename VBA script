@@ -1,0 +1,44 @@
+Option Explicit
+
+Sub HighlightRows()
+
+Dim TotalRow As Integer
+Dim RowNumber As Integer
+
+'Getting total number of rows with data excluding the header
+    TotalRow = WorksheetFunction.CountA(Columns("A:A")) - 1
+    
+'Loop through the rows that satisfy the conditions and highlight rows green
+    For RowNumber = 1 To TotalRow
+        If Range("Identifier").Value = Identifier(Range("A" & RowNumber + 1)) _
+            And Key(Range("A" & RowNumber + 1)) = Range("Key") Then
+                Range("A" & RowNumber + 1).Interior.ColorIndex = 4
+                Range("A" & RowNumber + 1).Offset(0, 1).Interior.ColorIndex = 4
+                Range("A" & RowNumber + 1).Offset(0, 2).Interior.ColorIndex = 4
+                
+                
+        End If
+        
+    Next RowNumber
+    
+Range("A1").Select
+
+    
+
+End Sub
+
+Function Identifier(ID As String) As String
+Identifier = Left(ID, 1)
+End Function
+
+Function Key(ID As String) As Integer
+Key = Left(Mid(ID, 4, 4), 1)
+End Function
+
+Sub Reset()
+With Range("A1").CurrentRegion.Cells.Interior
+    .Pattern = xlNone
+    .TintAndShade = 0
+    .PatternTintAndShade = 0
+End With
+End Sub
