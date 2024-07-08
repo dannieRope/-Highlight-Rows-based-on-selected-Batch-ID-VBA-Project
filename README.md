@@ -97,6 +97,10 @@ With Range("A1").CurrentRegion.Cells.Interior
 End With
 End Sub
 ```
+![Screenshot (24)](https://github.com/dannieRope/-Highlight-Rows-based-on-selected-Batch-ID-VBA-Project/assets/132214828/0e74d68b-3c59-4b98-94f2-6d234048d8e6)
+
+
+
 - Step 4: Creating command button run and reset button
   To insert command button, go to the developer tab, click on insert and choose command button from the drop down as shown below.
 
