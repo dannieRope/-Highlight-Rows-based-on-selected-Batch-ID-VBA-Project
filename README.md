@@ -115,7 +115,8 @@ End Sub
 Implimenting the above steps should help achieve exactly what was stated in the problem statement. 
 
 Thanks for reading. 
-Find the VBA script (here)[] 
+Find the VBA script (here)[https://github.com/dannieRope/-Highlight-Rows-based-on-selected-Batch-ID-VBA-Project/blob/main/VBA%20script] 
+Find the workbook (here)[]
 
 
 
