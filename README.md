@@ -23,8 +23,9 @@ For example, if we start with the worksheet layout above and run the subroutine 
 
 - Step 1: Creating a drop down menu in Cell F2 for the Identifiers and a drop down in F3 for the keys
   
-  To create a drop down, I first got the distinct identifiers and keys in a distant cells, cell S1 and T1 respectively
-  Below are the formula used in the process;
+  To create a drop down, extract distinct identifiers and keys and place them in cell S1 and T1 respectively
+  
+  Use the following formula to get the unique identifiers and Keys. 
   
   ```
   Identifier in Cell S1
@@ -36,7 +37,7 @@ For example, if we start with the worksheet layout above and run the subroutine 
   
   =SORT(UNIQUE(MID(A2:A26,FIND("-",A2:A26)+1,1)))
   ```
- The drop down menu was then created in F2 and F3 using Data validation feature available in the data tab in Excel as shown below
+ Create the drop down menu in F2 and F3 using Data validation feature available in the data tab in Excel as shown below
 
  ![Screenshot 2024-07-08 150241](https://github.com/dannieRope/-Highlight-Rows-based-on-selected-Batch-ID-VBA-Project/assets/132214828/9d2e2171-baf6-4f7f-95d2-0aeb9b0b82c5)
 
@@ -70,7 +71,7 @@ For example, if we start with the worksheet layout above and run the subroutine 
   End Sub
   ```
 
-The below functions were created to help find both the identifier and key. Both are referenced in the subroutine above. 
+The below functions were created to help find both the identifiers and keys. Both are referenced in the subroutine above. 
 
 ```vba
 
@@ -85,7 +86,7 @@ Key = Left(Mid(ID, 4, 4), 1)
 End Function
 ```
 
-- step 3: Creating a subroutine that helps reset or clear all formating and brings the data to its orginal form.
+- step 3: Creating a subroutine that helps reset or clear all formatings and brings the data to its orginal form.
 
 ```vba
 Sub Reset()
@@ -110,7 +111,14 @@ End Sub
   ![Screenshot 2024-07-08 160109](https://github.com/dannieRope/-Highlight-Rows-based-on-selected-Batch-ID-VBA-Project/assets/132214828/275d0cca-fd5d-4d19-b352-a80698ec8f06)
 
   # CONCLUSION
-Implimenting the above steps will 
+  
+Implimenting the above steps should help achieve exactly what was stated in the problem statement. 
+
+Thanks for reading. 
+Find the VBA script (here)[] 
+
+
+
 
 
   
