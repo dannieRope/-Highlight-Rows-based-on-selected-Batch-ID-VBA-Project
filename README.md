@@ -115,8 +115,14 @@ End Sub
 Implimenting the above steps should help achieve exactly what was stated in the problem statement. 
 
 Thanks for reading. 
-Find the VBA script (here)[https://github.com/dannieRope/-Highlight-Rows-based-on-selected-Batch-ID-VBA-Project/blob/main/VBA%20script] 
-Find the workbook (here)[]
+Find the VBA script [here](https://github.com/dannieRope/-Highlight-Rows-based-on-selected-Batch-ID-VBA-Project/blob/main/VBA%20script)
+
+Find the workbook [here](https://github.com/dannieRope/-Highlight-Rows-based-on-selected-Batch-ID-VBA-Project/blob/main/Project1.xlsm)
+
+Here is how the final work looks like:
+
+![Screenshot (23)](https://github.com/dannieRope/-Highlight-Rows-based-on-selected-Batch-ID-VBA-Project/assets/132214828/a06781e2-0443-4888-ba5b-cf2559dde4d7)
+
 
 
 
